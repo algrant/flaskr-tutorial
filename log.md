@@ -89,3 +89,15 @@ https://flask.palletsprojects.com/en/2.2.x/tutorial/static/
 
 Basically seems to use Jinja2 for templates, and function `render_from_template` will look in the `app/templates/...` directory to find appropriate files.
 Static files are served similarly automagically if they are placed in `app/static`.
+
+
+### Blog Blueprint
+
+Basic implementation of a blog by reading and writing from our DB once we are logged in.
+I like the @login_required wrapper.
+
+Missing a way to look at all items from a single user say -- this is a weird shared blog I suppose / vs a blog platform.
+
+I still feel like I don't understand general GET/POST/PUT etc... theory, not sure what to do about that though.
+i.e. in this context it's fairly clear what's happening, I suppose the form submit stuff is a little confusing to me...
+When you click submit it simply posts to this same address with form data attached I guess.
