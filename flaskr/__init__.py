@@ -27,11 +27,15 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route("/hello")
     def hello():
-        return "Hello, Shworld!"
+        return "Hello, World!"
 
-    # why do this import inline? perhaps this let's us use the imported g/current_app
+    # why do these imports inline? perhaps this let's us use the imported g/current_app
     from . import db
 
     db.init_app(app)
+
+    from . import auth
+
+    app.register_blueprint(auth.bp)
 
     return app

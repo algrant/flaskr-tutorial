@@ -57,6 +57,8 @@ https://flask.palletsprojects.com/en/2.2.x/tutorial/factory/
 
 Reading https://hackersandslackers.com/flask-application-factory/ to answer a bit of the "why" question below.
 
+Interesting: https://stackoverflow.com/questions/128478/should-import-statements-always-be-at-the-top-of-a-module
+* could be ```In the __init__.py of a plugin, which might be imported but not actually used. Examples are Bazaar plugins, which use bzrlib's lazy-loading framework.```
 
 
 ### Set up db
@@ -70,3 +72,12 @@ current_app - special object that points to the Flask application itself; this a
 
 Question: Why do the `from . import db` import inline within `flaskr/__init__.create_app`?
  * perhaps this let's us use the imported g/current_app properly?
+
+
+### Blueprints and Views
+
+Spent some time to better understand functools and decorators in general.
+https://docs.python.org/3/library/functools.html
+https://realpython.com/primer-on-python-decorators/
+
+also found potential answer to why we are importing inline.
