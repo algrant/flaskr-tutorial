@@ -81,3 +81,11 @@ https://docs.python.org/3/library/functools.html
 https://realpython.com/primer-on-python-decorators/
 
 also found potential answer to why we are importing inline.
+
+
+### Templates & Static files
+https://flask.palletsprojects.com/en/2.2.x/tutorial/templates/
+https://flask.palletsprojects.com/en/2.2.x/tutorial/static/
+
+Basically seems to use Jinja2 for templates, and function `render_from_template` will look in the `app/templates/...` directory to find appropriate files.
+Static files are served similarly automagically if they are placed in `app/static`.
