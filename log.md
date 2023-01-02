@@ -2,10 +2,10 @@
 https://flask.palletsprojects.com/en/2.2.x/tutorial/
 
 
-### conda setup
+### venv setup
 ```
-$ conda create -n flaskr
-$ conda activate flaskr
+$ python3 -m venv venv
+$ . venv/bin/activate
 ```
 
 
@@ -47,5 +47,10 @@ $ conda activate flaskr
   ├── setup.py
   └── MANIFEST.in
   ```
+
+</details>
+
+<details>
+  <summary>Application Factory</summary>
 
 </details>
